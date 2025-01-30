@@ -10,8 +10,14 @@
   --color-headline: #212121;
   --font-primary-font: "Manrope";
 }
+
 :root {
   @apply font-["Manrope"];
+}
+header,
+main {
+  @apply px-6;
+  @apply md:px-0;
 }
 .navbar {
   @apply shadow-none;
