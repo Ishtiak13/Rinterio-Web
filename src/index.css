@@ -46,3 +46,6 @@ input,
 textarea {
   @apply font-primary-font;
 }
+.footer-center {
+  grid-auto-flow: row dense;
+}
