@@ -1,6 +1,48 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@theme {
+  --color-primary1: #abef5f;
+  --color-dark1: #737373;
+  --color-dark2: #494949;
+  --color-bg-color: #f4f4f4;
+  --color-h3-color: #1c1c1c;
+  --color-headline: #212121;
+  --font-primary-font: "Manrope";
+}
 :root {
   @apply font-["Manrope"];
+}
+.navbar {
+  @apply shadow-none;
+}
+header .btn {
+  @apply rounded-full;
+  font-weight: bold;
+  font-size: 1.25rem;
+  @apply px-5;
+  @apply py-3;
+}
+p {
+  @apply text-dark2;
+  @apply font-medium;
+}
+h2 {
+  @apply text-headline;
+  @apply text-[2.5rem];
+  @apply font-bold;
+  @apply xl:text-6xl;
+}
+#work-card h3 {
+  @apply text-xl;
+  @apply text-h3-color;
+  @apply font-extrabold;
+}
+input::placeholder,
+textarea::placeholder {
+  @apply font-primary-font;
+}
+input,
+textarea {
+  @apply font-primary-font;
 }
